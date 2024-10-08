@@ -1,0 +1,15 @@
+name: Test bun
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  test-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copies code
+        uses: actions/checkout@v4
+
+      - name: build and test bun
+        run: docker compose up
