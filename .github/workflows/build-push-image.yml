@@ -25,8 +25,8 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          cache-from: afalobaid9/bun-app:latest
-          cache-to: afalobaid9/bun-app:latest
+          # cache-from: afalobaid9/bun-app:latest
+          # cache-to: afalobaid9/bun-app:latest
           tags: |
             afalobaid9/bun-app:latest
             afalobaid9/bun-app:${{ github.sha }}
